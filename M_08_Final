@@ -211,6 +211,26 @@ for num in range (size_of_list, 12, -1):
     break
  
  # ---------------
+ 
+ print()
+educational_grant = int(input('Размер стипендии: '))
+current_month_expenses = int(input('Введите размер ежемесячных расходов: '))
+expenses = 0
+
+educational_grant *= 10
+
+for num in range (1,11):
+    expenses += current_month_expenses
+    # print (round(expenses,2))
+    current_month_expenses *= 1.03
+
+
+parent_grant = round(expenses, 2) - educational_grant
+
+print (f'У мамы с папой придется попросить {parent_grant} р.')
+
+print()
+ 
  # ---------------
  # ---------------
  # ---------------
